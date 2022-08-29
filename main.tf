@@ -24,7 +24,7 @@ variable "NameParameter" {
 variable "ValueParameter" {
   type        = string
   description = "Valor do parametro do SSM"
-  default     = "bar"
+  default     = "bar1"
 }
 
 
