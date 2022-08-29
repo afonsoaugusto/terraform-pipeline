@@ -4,6 +4,9 @@ on:
   push:
   pull_request:
 
+env:
+  TFE_TOKEN: '${{ secrets.TFE_TOKEN }}'  
+
 jobs:
   terraform:
     name: "Terraform Cloud Pipeline Job"
