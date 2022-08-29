@@ -24,7 +24,7 @@ jobs:
 
       - name: Change Workspace On Tag
         id: ChangeWorkspaceOnTag
-        if: github.event_name == 'create' && startsWith(github.ref, 'refs/tags/v')
+        if: startsWith(github.ref, 'refs/tags/v')
         run: |
           sed -i 's/name = "terraform-pipeline-dev"/name = "terraform-pipeline-prd"/g' backend.tf
 
