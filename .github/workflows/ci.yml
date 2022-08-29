@@ -6,6 +6,7 @@ on:
 
 env:
   TFE_TOKEN: '${{ secrets.TFE_TOKEN }}'  
+  TF_API_TOKEN: '${{ secrets.TF_API_TOKEN }}'  
 
 jobs:
   terraform:
